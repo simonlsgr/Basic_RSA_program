@@ -1,0 +1,82 @@
+:root {
+    --background-color-dark: #303346;
+    --background-color-darker: #252837;
+    --background-color-darkest: #1d1f2b;
+    --main-color: #6487fd;
+    --main-color-hover: #516ece;
+    --text-color: #f6fffe;
+    --text-color-darkened: #bcc5c4;
+
+    /* get the ubuntu font from google */
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+body {
+    background-color: var(--background-color-darkest);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    background-color: var(--background-color-darker);
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.output {
+    background-color: var(--background-color-dark);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: scroll;
+    width: 600px;
+}
+
+.output:empty {
+    display: none;
+}
+
+.output p {
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+.output p:last-child {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+    background-color: var(--background-color-dark);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input input:focus {
+    background-color: var(--background-color-darkest);
+}
