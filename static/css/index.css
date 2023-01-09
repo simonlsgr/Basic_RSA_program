@@ -80,3 +80,11 @@ form {
 .input input:focus {
     background-color: var(--background-color-darkest);
 }
+
+.button {
+    background-color: var(--main-color) !important;
+}
+
+.button:hover {
+    background-color: var(--main-color-hover) !important;
+}

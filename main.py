@@ -69,10 +69,10 @@ def main():
             <div class="content">
                 <form action="/" method="POST">
                     <div class="input">
-                        <input type="text" name="message" id="message" placeholder="Message…" />
+                        <input type="text" required name="message" id="message" placeholder="Message…" />
                     </div>
                     <div class="input">
-                        <input type="submit" value="Encrypt" />
+                        <input class="button" type="submit" value="Encrypt" />
                     </div>
                 </form>
                 <div class="output">
@@ -89,11 +89,11 @@ def main():
             <div class="content">
                 <form action="/" method="POST">
                     <div class="input">
-                        <input type="text" name="Ciphertext" id="Ciphertext" placeholder="Ciphertext…" />
-                        <input type="text" name="key" id="key" placeholder="Key…" />
+                        <input type="text" required name="Ciphertext" id="Ciphertext" placeholder="Ciphertext…" />
+                        <input type="text" required name="key" id="key" placeholder="Key…" />
                     </div>
                     <div class="input">
-                        <input type="submit" value="Decrypt" />
+                        <input class="button" type="submit" value="Decrypt" />
                     </div>
                 </form>
                 <div class="output">
