@@ -1,6 +1,5 @@
 import flask
 import rsa as rsa
-import sys
 
 app = flask.Flask(__name__)
 
