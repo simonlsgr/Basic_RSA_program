@@ -8,7 +8,6 @@ app = flask.Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def main():
     
-    # global key
     output_encrypt_ciphertext = ""
     output_encrypt_key = ""
     output_decrypt = ""
