@@ -30,8 +30,6 @@ def main():
             encrypted_message = rsa.rsa().encrypt(message_numbers_list, key)
             output_encrypt_ciphertext = "Ciphertext: " + str(encrypted_message) + ""
             output_encrypt_key = "Key: " + str(key) + ""
-            print(encrypted_message, file=sys.stderr)
-            print(key, file=sys.stderr)
                 
         elif Ciphertext_input:
             
@@ -43,7 +41,6 @@ def main():
                 decrypted_message_out.append(chr(i))
             decrypted_message_out = "".join(decrypted_message_out)
             output_decrypt = "<p>Decrypted message: " + decrypted_message_out + "</p>"
-            print(decrypted_message_out, file=sys.stderr)
             
             
     
